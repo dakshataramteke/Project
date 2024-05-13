@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fee Management System</title>
+  <!-- <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <script src=
+"https://d3js.org/d3.v4.min.js"></script>
+<script src=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+<link rel="stylesheet"
+	href=
+"https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css" />
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
+
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js">
+</script>
+  <style>
+    .fa-indian-rupee-sign{
+      /* padding-right: 10px; */
+      padding-left: 10px;
+    }
+    body {
+		text-align: center;
+		color: green;
+	}
+
+	h2 {
+		text-align: center;
+		font-family: "Verdana", sans-serif;
+		font-size: 40px;
+	}
+  #donut-chart, #bar{
+    box-shadow: 3px 5px 8px grey;
+  }
+  </style>
+  
+ 
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" >
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+      
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Fees Management System</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./StudentList1.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Student List</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./PaymentList1.html" aria-expanded="false">
+                <span>
+                  <i class="fa-solid fa-indian-rupee-sign"></i>
+                </span>
+                <span class="hide-menu">Payment List</span>
+              </a>
+            </li>
+           
+          </ul>
+          
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+     
+      <!--  Header End -->
+      <div class="container-fluid">
+        <!--  Row 1 -->
+        <div class="content container-fluid">
+
+          <div class="page-header">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="page-sub-header">
+                          <h3 class="page-title">Welcome Prerna College!</h3>
+                          <ul class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active">Admin</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                  <div class="card bg-comman w-100">
+                      <div class="card-body">
+                          <div class="db-widgets d-flex justify-content-between align-items-center">
+                              <div class="db-info">
+                                  <h6>Students</h6>
+                                  <h3>20</h3>
+                              </div>
+                              <div class="db-icon">
+                                  <!-- <img src="assets/img/icons/dash-icon-01.svg" alt="Dashboard Icon"> -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                  <div class="card bg-comman w-100">
+                      <div class="card-body">
+                          <div class="db-widgets d-flex justify-content-between align-items-center">
+                              <div class="db-info">
+                                  <h6>Total Fees</h6>
+                                  <h3>555700</h3>
+                              </div>
+                              <div class="db-icon">
+                                  <!-- <img src="assets/img/icons/dash-icon-02.svg" alt="Dashboard Icon"> -->
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                  <div class="card bg-comman w-100">
+                      <div class="card-body">
+                          <div class="db-widgets d-flex justify-content-between align-items-center">
+                              <div class="db-info">
+                                  <h6>Payment Done</h6>
+                                  <h3>237500</h3>
+                              </div>
+                              <div class="db-icon">
+                                  <!-- <img src="assets/img/icons/dash-icon-03.svg" alt="Dashboard Icon"> -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-12 d-flex">
+                  <div class="card bg-comman w-100">
+                      <div class="card-body">
+                          <div class="db-widgets d-flex justify-content-between align-items-center">
+                              <div class="db-info">
+                                  <h6>Balance Fees</h6>
+                                  <h3>318200</h3>
+                              </div>
+                              <div class="db-icon">
+                                  <!-- <img src="assets/img/icons/dash-icon-04.svg" alt="Dashboard Icon"> -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+
+              <!-- <div class="card card-chart"> -->
+                  <div class="card-header">
+                      <div class="row align-items-center">
+                        <div id="columnchart" style="width: 600px; height: 400px;"></div>
+
+                      <!-- </div> -->
+                  </div>
+                  <div class="card-body">
+                      <div id="bar"></div>
+                  </div>
+              </div>
+
+            </div>
+              <div class="col-md-12 col-lg-6">
+               +
+                  <div class="col-xs-12 text-center">
+                    <h2>Payment</h2>
+                  </div>
+                
+                  <div id="donut-chart"></div>
+              </div>       
+          </div>
+      </div>
+      <!-- Student  -->
+      
+     
+      </div>
+    </div>
+  </div>
+  <script>
+		let chart = bb.generate({
+			data: {
+				columns: [
+					["Balance Fees", 3],
+					["Total Fees", 5.5],
+					["Paid Fees", 2.5],
+				],
+				type: "donut",
+				onclick: function (d, i) {
+					console.log("onclick", d, i);
+				},
+				onover: function (d, i) {
+					console.log("onover", d, i);
+				},
+				onout: function (d, i) {
+					console.log("onout", d, i);
+				},
+			},
+			donut: {
+				title: "Fees",
+			},
+			bindto: "#donut-chart",
+		});
+	</script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+     google.charts.load('current', {'packages':['bar']});
+     google.charts.setOnLoadCallback(drawChart);
+
+     function drawChart() {
+       var data = google.visualization.arrayToDataTable([
+         ['Year', 'Girls', 'Boys'],
+        
+         ['2017', 10, 18],
+         ['2018', 11, 16],
+         ['2019', 16, 11],
+         ['2020', 19, 9],
+         ['2021', 10, 18],
+         ['2022', 10, 15],
+         ['2023', 9, 11],
+       ]);
+
+       var options = {
+         chart: {
+           title: 'Students',
+          
+         }
+       };
+
+       var chart = new google.charts.Bar(document.getElementById('columnchart'));
+
+       chart.draw(data, google.charts.Bar.convertOptions(options));
+     }
+   </script>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+
+</html>

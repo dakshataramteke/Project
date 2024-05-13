@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fees Form</title>
+  <!-- <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../assets/css/fee.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <!-- <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div> -->
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Admin</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Fee Management System</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./StudentList1.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Student List</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./PaymentList1.html" aria-expanded="false">
+                <span>
+                  <i class="fa-solid fa-indian-rupee-sign"></i>
+                </span>
+                <span class="hide-menu">Payment List</span>
+              </a>
+            </li>
+<!--           
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-file-description"></i>
+                </span>
+                <span class="hide-menu">Forms</span>
+              </a>
+            </li> -->
+           
+          </ul>
+          
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <div class="container-fluid">
+       
+        <div class="container">
+          <div>
+            <h1>Fees Management System</h1>
+          </div>
+          <div>
+            <p id="time"></p>
+          </div>
+      
+        
+        <hr>
+        
+           <div class="wrapper">
+             <form class="row g-3 needs-validation" id="myForm" novalidate>
+      
+            <!-- Receipt No.  -->
+            <div class="row">
+              <div class="col-md-3">
+                <label for="validationCustom03" class="form-label">Receipt No.</label>
+                <input type="text" class="form-control" id="validationCustom03" required pattern="^[0-9]*$">
+                <div class="invalid-feedback">
+                  Please provide Receipt No.
+                </div>
+                </div>
+                <div class="col-md-6"></div>
+        
+                <!-- Session -->
+                <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Session</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose</option> 
+                  <option>2022-23</option>
+                  <option>2023-24</option>
+                  <option>2024-25</option> 
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid Session.
+                </div>
+                </div>
+            </div>
+           
+      
+              <!-- Class  -->
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Class</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a class name.
+                  </div>
+                  </div>
+          
+                  <div class="col-md-6"></div>
+          
+                   <!-- Date  -->
+                  <div class="col-md-3">
+                  <label for="dateFormat" class="form-label">Date</label>
+                  <input type="text" class="form-control" id="dateFormat" required>
+                  <div class="invalid-feedback">
+                    Please provide Date.
+                  </div>
+                  </div>
+              </div>
+              
+      
+              <!-- First Name  -->
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="validationCustom04" class="form-label">Student Name</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose</option>
+                <option value="1">Manisha Jhungure</option>
+                <option value="2">kalyani Jhungure</option>
+                <option value="3">Sakshi Pajai</option>
+                <option value="4">Trupti Gahukar</option>
+                <option value="5">Pranali Thawkar</option>
+                <option value="6">Vicky Gahukar</option>
+                <option value="7">Kanchan Pajai</option>
+                <option value="8">Parthavi Khandait</option>
+                <option value="9">Avni Tijare</option>
+                <option value="10">Krishav Fating</option>
+                <option value="11">Arohi Khandait</option>
+                <option value="12">Sakshi Rokde</option>
+                <option value="13">Tanu Shirke</option>
+                <option value="14">Mansee Mahato</option>
+                <option value="15">Sakshi Gaikwad</option>
+                <option value="16">Pornima Awsare</option>
+                <option value="17">Anjali Waghmare</option>
+                <option value="18">Dakshata Ramteke</option>
+                <option value="19">Sakshi Chaudhary</option>
+                <option value="20">Pratik Bambole</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a Student name.
+              </div>
+                </div>
+              </div>
+                
+      
+                <!-- Username  Email Address-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Please provide a username.
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Contact -->
+                  <div class="col-md-6">
+                    <label for="validationCustomUsername" class="form-label">Contact</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-phone"></i></span>
+                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required pattern="^[0-9]*$">
+                      <div class="invalid-feedback">
+                        Please provide a Contact Details.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+      
+                <table class="table">
+                <thead>
+                  <tr>
+                  <th scope="col">#</th>
+                  <th colspan="4" scope="col">Fees</th>
+                   <th>Amount</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    
+                    </label></th>
+                  <td colspan="4">Admission Fees</td>
+                  <td><input type="text" class="netPrice form-control"  disabled></td>
+                  
+                  </tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                          
+                          </label></th>
+                  <td colspan="4">Exam Fees</td>
+                  <td><input type="text" class="netPrice form-control"disabled></td>
+                </tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault" >
+                          
+                          </label></th>
+                  <td colspan="4">Library Fees</td>
+                  <td><input type="text" class="netPrice form-control" disabled></td>
+                  </tr>
+                  <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                          
+                          </label></th>
+                  <td colspan="4">Bus Fees</td>
+                  <td><input type="text" class="netPrice form-control" disabled></td>
+                  </tr>
+                  <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                          
+                          </label></th>
+                  <td colspan="4">Parking Fees</td>
+                  <td><input type="text" class="netPrice form-control" disabled></td>
+                  </tr>
+              
+                  <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                          
+                          </label></th>
+                  <td colspan="4">Clearance</td>
+                  <td><input type="text" class="netPrice form-control" disabled></td>
+                  </tr>
+      
+                  <tr>
+                  <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                          
+                          </label></th>
+                  <td colspan="4">Hostel Fees</td>
+                  <td><input type="text" class="netPrice form-control" disabled></td>
+                  </tr>
+                  <!-- Total Fees  -->
+                  <tr>
+                  <th scope="row"></th>
+                  <td colspan="4">Total Fees</td>
+                  <td id="total">0</td>
+                  </tr>
+                  <!-- Paid Fees  -->
+                  <tr>
+                  <th scope="row"></th>
+                  <td colspan="4">Paid Fees</td>
+                  <td><input type="text" id="paidFees" class="form-control" oninput="calculateBalance()"></td>
+                  </tr>
+                  <!-- Balance Fees  -->
+                  <tr>
+                  <th scope="row"></th>
+                  <td colspan="4">Balance Fees</td>
+                  <td id="balance">0</td>
+                  </tr>
+                </tbody>
+                </table><br/>
+                <div>
+                <p>Rupees in words: <span id="rupees"></span></p>
+                </div><br/><br/>
+      
+                <!-- Payment Mode -->
+                <div class="row">
+                <label for="">Payment Mode</label>
+                <div class="form-check col-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Cash
+                </label>
+                </div>
+                <div class="form-check col-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                 UPI
+                </label>
+                
+                </div>
+                <div class="form-check col-3">
+                <input id="flexRadioDefault3" class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault3">
+                 Debit Card
+                </label>
+                </div>
+              </div>
+              <!-- Submit Form  -->
+                <div class="col-12">
+                <button type="reset" class="btn">Cancel</button>  
+                  <button type="submit" class="btn">Submit</button>  
+                </div>
+            </form>
+          </div>
+        </div>
+      
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <!-- <script src="../assets/js/FeesCalculation.js"></script> -->
+  <script src="../assets/js/FeesCalculation.js"></script>
+</body>
+
+</html>

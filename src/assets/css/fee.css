@@ -1,0 +1,59 @@
+
+.container{
+    border: 1px solid black;
+    width: 80%;
+   
+}
+.wrapper
+{
+    max-width: 800px;
+    margin: 50px auto 0;
+}
+h1, #time{
+    text-align: center;
+}
+input, .form-check-input, .form-select{
+    box-shadow: none!important;
+}
+table, tr, th, td{
+    border: 2px solid black;
+    color: black;
+}
+.table input{
+    width: 50%;
+}
+.btn{
+    box-shadow: none !important;
+    margin: 10px 30px 30px;
+    border: 1px solid black;
+    width: 20%;
+    font-weight: bold;
+    border-radius: 19px;
+    color: black;
+}
+.btn:hover{
+    border: 1px solid black;
+}
+.form-check{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.form-check-input{
+    border-color: black;
+    /* background-color: black; */
+}
+ /* Change the color of the radio button when checked */
+ .form-check-input:checked {
+background-color: black !important; 
+border-color: black !important;
+}
+
+/* Change the color of the radio button when unchecked */
+.form-check-input:not(:checked) {
+border-color: black !important;
+}
+
+/* Change the color of the label text */
+.form-check-label {
+color: black !important;
+} 
